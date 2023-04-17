@@ -1,0 +1,65 @@
+.animation {
+  width: 100%;
+  height: 600px;
+  /* background-color: #bcdce8; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.teshik {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50px;
+  position: absolute;
+  top: 10px;
+  border: 15px solid rgb(54, 223, 214);
+}
+.doira {
+  width: 400px;
+  height: 410px;
+  border-radius: 100%;
+  border: 30px solid rgb(54, 223, 214);
+  position: absolute;
+}
+
+.oq {
+  width: 400px;
+  height: 410px;
+  border-radius: 100%;
+  animation: abc 5s linear infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.nuqta {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: rgb(54, 223, 214);
+  border-radius: 30px;
+}
+
+.strelka {
+  width: 200px;
+  height: 15px;
+  background-color: rgb(54, 223, 214);
+  position: absolute;
+  top: 8px;
+  border-radius: 30px;
+}
+
+.oq:hover {
+  animation-play-state: paused;
+}
+
+@keyframes abc {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
